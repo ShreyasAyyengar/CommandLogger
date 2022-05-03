@@ -1,0 +1,7 @@
+name: CommandLogger
+version: '${project.version}'
+main: me.shreyasayyengar.commandlogger.CommandLogger
+api-version: 1.18
+prefix: CommandLogger
+author: Shreyas Ayyengar
+description: Logs commands run by users into a discord channel
