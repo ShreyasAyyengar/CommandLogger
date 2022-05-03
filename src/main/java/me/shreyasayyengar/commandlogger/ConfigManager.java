@@ -17,12 +17,11 @@ public class ConfigManager {
 
     public static void log(Player executee, String message) {
 
-        for (String channel : main.getConfig().getStringList("channels")) {
+        for (String channel : main.getConfig().getConfigurationSection("channels").getKeys(false)) {
             List<String> stringList = main.getConfig().getStringList("channels." + channel + ".commands");
 
             String capture = message.split(" ")[0];
             if (stringList.contains(capture)) {
-
                 TextChannel channelToSend = main.getJDA().getTextChannelById(channel);
                 if (channelToSend != null) {
                     String rawMsg = main.getConfig().getString("channels." + channel + ".message");

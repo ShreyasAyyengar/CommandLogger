@@ -5,3 +5,5 @@ api-version: 1.18
 prefix: CommandLogger
 author: Shreyas Ayyengar
 description: Logs commands run by users into a discord channel
+depend:
+  - JDA
