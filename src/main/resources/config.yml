@@ -17,4 +17,5 @@ channels:
       - "/gamerule"
       - "/difficulty"
     message: "**{player}** used the command `{command}`."
+    log-location: true
 
